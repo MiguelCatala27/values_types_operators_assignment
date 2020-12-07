@@ -113,7 +113,7 @@ For reference, here is a truth table for the expression A && !B. You can fill o
 
 | A     | B     | !B    | A && !B | !A && !B |
 | ----- | ----- | ----- | ------- | -------- |
-| true  | true  | false | false   |   true   |
+| true  | true  | false | false   |   false   |
 | false | true  | false | false   |   false  |
 | true  | false | true  | true    |   false   |
 | false | false | true  | false   |   true  |
@@ -167,11 +167,14 @@ Write a step-by-step evaluation for the following expression: `'ca' + 'ter' + 'p
 Write a step-by-step evaluation for the following expression: `2 * 4 === 8 && 'car' + 'pool' === 'carpool'`.
 2 * 4 === 8 && 'car' + 'pool' === 'carpool'
 8 === 8 && 'car' + 'pool' === 'carpool'
-8 === 8 && carpool === carpool
+true && 'car' + 'pool' ==== 'carpool'
+true && 'carpool' === 'carpool'
+true && true
+true
 ## Problem Ten
 
 Write a step-by-step evaluation for the following expression: `'1' + '2' + '3' - '1'`.
-1 + 2 + 3 - 1
-3 + 3 - 1
-6 - 1
-5
+'1' + '2'
+'12' + '3'
+'123' - '1'
+'122'
